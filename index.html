@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Panel Konfigurasi DINNS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Generator Konfigurasi</h1>
+    <p class="sub">Sesuaikan bug, payload, dan proxy sesuai jaringan kamu.</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <label>Pilih Provider</label>
+        <select id="operatorSelect">
+            <option value="">Pilih Operator</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <label>Kategori Bug</label>
+        <select id="bugSelect">
+            <option value="">Pilih Bug</option>
+        </select>
+        <button onclick="copyText('bug')" class="btn-copy">Salin Bug</button>
+    </div>
+
+    <div class="card">
+        <label>Payload</label>
+        <select id="payloadSelect">
+            <option value="">Pilih Payload</option>
+        </select>
+        <button onclick="copyText('payload')" class="btn-copy">Salin Payload</button>
+    </div>
+
+    <div class="card">
+        <label>Proxy</label>
+        <select id="proxySelect">
+            <option value="">Pilih Proxy</option>
+        </select>
+        <button onclick="copyText('proxy')" class="btn-copy">Salin Proxy</button>
+    </div>
+
+</div>
+
+<section class="info">
+    <h2>Panduan Penggunaan</h2>
+    <ul>
+        <li>Pilih operator sesuai kartu SIM kamu.</li>
+        <li>Pilih kategori bug sesuai kebutuhan.</li>
+        <li>Pilih payload yang cocok dari daftar.</li>
+        <li>Pilih proxy terbaik.</li>
+        <li>Gunakan tombol salin dan tempel di aplikasi injector.</li>
+    </ul>
+
+    <h3 class="video-title">Video Tutorial</h3>
+
+    <button class="btn" onclick="openVideoTab()">Buka Video</button>
+</section>
+
+<section class="services">
+
+    <h2 class="subtitle">Layanan VPN & SSH Premium</h2>
+    <div class="card">
+        <a href="https://dinns.my.id/ordervpn" class="btn-outline" target="_blank">
+            Order VPN / SSH 24 Jam
+        </a>
+
+        <a href="https://wa.me/6280000000000?text=Halo%20Admin,%20Saya%20Ingin%20Order%20VPN%20atau%20SSH"
+           class="btn-outline" target="_blank">
+            Kontak Admin
+        </a>
+    </div>
+
+    <h2 class="subtitle">Komunitas & Informasi</h2>
+    <div class="card">
+
+        <a href="https://chat.whatsapp.com/XXXXX" class="btn-small" target="_blank">
+            Grup Diskusi Utama
+        </a>
+
+        <a href="https://chat.whatsapp.com/YYYYY" class="btn-small" target="_blank">
+            Grup Sharing Config
+        </a>
+
+        <a href="https://chat.whatsapp.com/ZZZZZ" class="btn-small" target="_blank">
+            Kumpulan Testimoni
+        </a>
+
+        <a href="https://chat.whatsapp.com/AAAAA" class="btn-small" target="_blank">
+            Channel Informasi
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 DINNS Panel — All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

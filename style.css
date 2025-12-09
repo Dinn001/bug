@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f6fb;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2a4dd1;
+}
+
+.sub {
+    font-size: 14px;
+    opacity: .75;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto 10px;
+}
+
+.card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #dce3ef;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #cfd8e6;
+    background: #f8faff;
+    font-size: 15px;
+}
+
+.btn-copy {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    background: #2a4dd1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* BUTTON UNTUK VIDEO */
+.btn {
+    width: 9em;
+    height: 2.8em;
+    margin: 15px auto;
+    display: block;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.45s ease;
+}
+
+.btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+.video-title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a4dd1;
+}
+
+.btn-outline {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #2a4dd1;
+    color: #2a4dd1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-small {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    background: #eaf1ff;
+    color: #2a4dd1;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.info, .services {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    opacity: .7;
+    margin-top: 20px;
+}
