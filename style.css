@@ -1,5 +1,5 @@
 /* ============================================================
-   BACKGROUND AI ANIMATION (NEURAL NETWORK)
+   AI NEURAL ANIMATION (BACKGROUND)
 ============================================================ */
 .algo-animation {
   position: fixed;
@@ -38,7 +38,7 @@
 }
 
 /* ============================================================
-   GRID BACKGROUND
+   GRID BACKGROUND 
 ============================================================ */
 .bg-grid {
   position: fixed;
@@ -104,7 +104,7 @@
 }
 
 /* ============================================================
-   INPUTS
+   INPUT GROUP
 ============================================================ */
 .input-group {
   margin-bottom: 14px;
@@ -129,7 +129,7 @@ select {
 }
 
 /* ============================================================
-   RESULT SECTION
+   RESULT BLOCK
 ============================================================ */
 .result-box {
   margin-bottom: 20px;
@@ -154,7 +154,6 @@ select {
   box-shadow: 0 0 18px rgba(14,165,233,.6);
 }
 
-/* PAYLOAD & PROXY BOX */
 pre {
   background: #1e293b;
   padding: 12px;
@@ -166,7 +165,7 @@ pre {
   min-height: 40px;
 }
 
-/* COPY BUTTON */
+/* COPY */
 .copy-btn {
   width: 100%;
   padding: 10px;
@@ -181,7 +180,7 @@ pre {
 }
 
 /* ============================================================
-   MENU LINKS
+   LINKS 
 ============================================================ */
 .algo-link {
   display: block;
@@ -203,7 +202,62 @@ pre {
   background: #334155;
 }
 
-/* FOOTER */
+/* ============================================================
+   CARA PENGGUNAAN 
+============================================================ */
+.usage-step {
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  border-left: 3px solid #38bdf8;
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 8px;
+}
+
+.usage-step h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #38bdf8;
+}
+
+.usage-step p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.usage-note {
+  font-size: 13px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* ============================================================
+   VIDEO BUTTON
+============================================================ */
+.video-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #001220;
+  box-shadow: 0 0 20px rgba(56,189,248,.4);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.video-btn:hover {
+  box-shadow: 0 0 25px rgba(56,189,248,.7);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
 .footer {
   text-align: center;
   margin-top: 25px;
