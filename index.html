@@ -1,111 +1,109 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Panel Konfigurasi DINNS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>DINNS Algorithm Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
-<script src="data.js"></script>   <!-- ✓ BENAR -->
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>Generator Konfigurasi</h1>
-    <p class="sub">Sesuaikan bug, payload, dan proxy sesuai jaringan kamu.</p>
-</header>
+<!-- BACKGROUND ANIMATION -->
+<div class="algo-animation"></div>
+<div class="bg-grid"></div>
 
-<div class="container">
+<div class="app-container">
 
-    <div class="card">
-        <label>Pilih Provider</label>
-        <select id="operatorSelect">
-            <option value="">Pilih Operator</option>
-        </select>
+  <header class="header">
+    <h1 class="title">CONFIGURASI</h1>
+    <p class="subtitle">Konfigurasi jaringan berbasis algoritma.</p>
+  </header>
+
+  <!-- CONFIG PANEL -->
+  <section class="algo-card">
+
+    <h2 class="section-title">Input Parameter</h2>
+
+    <div class="input-group">
+      <label>Operator</label>
+      <select id="operatorSelect">
+        <option value="">Pilih Operator</option>
+      </select>
     </div>
 
-    <div class="card">
-        <label>Kategori Bug</label>
-        <select id="bugSelect">
-            <option value="">Pilih Bug</option>
-        </select>
-        <button onclick="copyText('bug')" class="btn-copy">Salin Bug</button>
+    <div class="input-group">
+      <label>Bug</label>
+      <select id="bugSelect">
+        <option value="">Pilih Bug</option>
+      </select>
     </div>
 
-    <div class="card">
-        <label>Payload</label>
-        <select id="payloadSelect">
-            <option value="">Pilih Payload</option>
-        </select>
-        <button onclick="copyText('payload')" class="btn-copy">Salin Payload</button>
+    <div class="input-group">
+      <label>Payload</label>
+      <select id="payloadSelect">
+        <option value="">Pilih Payload</option>
+      </select>
     </div>
 
-    <div class="card">
-        <label>Proxy</label>
-        <select id="proxySelect">
-            <option value="">Pilih Proxy</option>
-        </select>
-        <button onclick="copyText('proxy')" class="btn-copy">Salin Proxy</button>
+    <div class="input-group">
+      <label>Proxy</label>
+      <select id="proxySelect">
+        <option value="">Pilih Proxy</option>
+      </select>
     </div>
+
+  </section>
+
+  <!-- RESULT -->
+  <section class="algo-card">
+
+    <h2 class="section-title">Output Algorithm</h2>
+
+    <div class="result-box">
+      <span class="result-label">Bug</span>
+      <button class="output-btn" id="bugResult">Belum ada bug dipilih</button>
+    </div>
+
+    <div class="result-box">
+      <span class="result-label">Payload</span>
+      <pre id="payloadResult">Belum ada payload dipilih</pre>
+      <button class="copy-btn" onclick="copyResult('payloadResult')">Copy Payload</button>
+    </div>
+
+    <div class="result-box">
+      <span class="result-label">Proxy</span>
+      <pre id="proxyResult">Belum ada proxy dipilih</pre>
+      <button class="copy-btn" onclick="copyResult('proxyResult')">Copy Proxy</button>
+    </div>
+
+  </section>
+
+  <!-- SERVICE -->
+  <section class="algo-card">
+    <h2 class="section-title">DINNS Service</h2>
+
+    <a class="algo-link" href="https://vpnmurah.dinns.my.id" target="_blank">🌐 Order VPN / SSH Otomatis 24 Jam</a>
+    <a class="algo-link" href="https://wa.me/6282314477001" target="_blank">👤 Kontak Admin</a>
+  </section>
+
+  <!-- GROUP -->
+  <section class="algo-card">
+    <h2 class="section-title">Komunitas DINNS</h2>
+
+    <a class="algo-link" href="https://chat.whatsapp.com/B6M4lPMEEITDerKLK7dHCk" target="_blank">💬 Grup Diskusi</a>
+    <a class="algo-link" href="https://chat.whatsapp.com/GygfMGpyik2A7zNRhHsjSh" target="_blank">📁 Sharing Config</a>
+    <a class="algo-link" href="https://whatsapp.com/channel/0029VadQQ1w5PO19jZe48y0y" target="_blank">⭐ Grup Testimoni</a>
+    <a class="algo-link" href="https://whatsapp.com/channel/0029Vb5J2pQBadmfz6AjVb2xhttps://chat.whatsapp.com/B6M4lPMEEITDerKLK7dHCk" target="_blank">📢 Channel Info</a>
+  </section>
+
+  <footer class="footer">
+  </footer>
 
 </div>
 
-<section class="info">
-    <h2>Panduan Penggunaan</h2>
-    <ul>
-        <li>Pilih operator sesuai kartu SIM kamu.</li>
-        <li>Pilih kategori bug sesuai kebutuhan.</li>
-        <li>Pilih payload yang cocok dari daftar.</li>
-        <li>Pilih proxy terbaik.</li>
-        <li>Gunakan tombol salin dan tempel di aplikasi injector.</li>
-    </ul>
-
-    <h3 class="video-title">Video Tutorial</h3>
-
-    <button class="btn" onclick="openVideoTab()">Buka Video</button>
-</section>
-
-<section class="services">
-
-    <h2 class="subtitle">Layanan VPN & SSH Premium</h2>
-    <div class="card">
-        <a href="https://dinns.my.id/ordervpn" class="btn-outline" target="_blank">
-            Order VPN / SSH 24 Jam
-        </a>
-
-        <a href="https://wa.me/6280000000000?text=Halo%20Admin,%20Saya%20Ingin%20Order%20VPN%20atau%20SSH"
-           class="btn-outline" target="_blank">
-            Kontak Admin
-        </a>
-    </div>
-
-    <h2 class="subtitle">Komunitas & Informasi</h2>
-    <div class="card">
-
-        <a href="https://chat.whatsapp.com/XXXXX" class="btn-small" target="_blank">
-            Grup Diskusi Utama
-        </a>
-
-        <a href="https://chat.whatsapp.com/YYYYY" class="btn-small" target="_blank">
-            Grup Sharing Config
-        </a>
-
-        <a href="https://chat.whatsapp.com/ZZZZZ" class="btn-small" target="_blank">
-            Kumpulan Testimoni
-        </a>
-
-        <a href="https://chat.whatsapp.com/AAAAA" class="btn-small" target="_blank">
-            Channel Informasi
-        </a>
-
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 DINNS Panel — All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script> <!-- ✓ BENAR -->
 </body>
 </html>

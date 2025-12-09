@@ -1,9 +1,11 @@
 const DATA = {
     operators: {
 
+        // ================= XL ===================
         xl: {
             name: "XL",
             bugs: {
+
                 edukasi: {
                     name: "Bug Edukasi",
                     payload: [
@@ -41,22 +43,8 @@ const DATA = {
                         "www.udemy.com:80",
                         "Belum tersedia"
                     ]
-                }
-            }
-        },
-        
-        vidi: {
-                    name: "Bug Vidi",
-                    payload: [
-                        "GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]",
-                        "Belum tersedia"
-                    ],
-                    proxy: [
-                        "104.18.1.196:80",
-                        "Belum tersedia",
-                        "Belum tersedia"
-                    ]
                 },
+
                 vidi: {
                     name: "Bug Vidi",
                     payload: [
@@ -80,12 +68,15 @@ const DATA = {
                         "live.iflix.com"
                     ]
                 }
+
             }
         },
 
+        // ================= AXIS ===================
         axis: {
             name: "AXIS",
             bugs: {
+
                 edukasi: {
                     name: "Bug Edukasi",
                     payload: [
@@ -94,8 +85,8 @@ const DATA = {
                     ],
                     proxy: [
                         "104.17.70.206:80",
-                      "104.22.4.240:80",
-                      "104.17.3.81:80",
+                        "104.22.4.240:80",
+                        "104.17.3.81:80",
                         "ablink.alerts.udemy.com"
                     ]
                 },
@@ -109,11 +100,11 @@ const DATA = {
                     proxy: [
                         "dev.appsflyer.com",
                         "web.poe.garena.com:80"
-                      ]
+                    ]
                 },
-                
-            conference: {
-              name: "Bug Conference",
+
+                conference: {
+                    name: "Bug Conference",
                     payload: [
                         "GET / HTTP/1.1[crlf]Host: devsupport.zoom.us[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/SweaterPink 200 OK[crlf][crlf]",
                         "PATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: beta.zoom.us[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: @DINSTORE [ua][crlf][crlf]"
@@ -124,22 +115,26 @@ const DATA = {
                         "support.zoom.us:80"
                     ]
                 },
-                
+
                 sosmed: {
                     name: "Bug Sosmed",
                     payload: [
-                        "GET http://v16.tiktokcdn.com/ HTTP/1.1",
-                        "CONNECT tiktok.com:443 HTTP/1.1"
+                        "eror",
+                        "tes"
                     ],
                     proxy: [
                         "172.67.71.2:443",
                         "104.21.45.6:443"
                     ]
-                },
-                
+                }
+            }
+        },
+
+        // ================= TELKOMSEL ===================
         telkomsel: {
             name: "TELKOMSEL",
             bugs: {
+
                 gamemax: {
                     name: "Gamemax",
                     payload: [
@@ -161,6 +156,7 @@ const DATA = {
                         "v2ray 104.20.28.42"
                     ]
                 }
+
             }
         }
 

@@ -1,148 +1,212 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f3f6fb;
-    color: #222;
+/* ============================================================
+   BACKGROUND AI ANIMATION (NEURAL NETWORK)
+============================================================ */
+.algo-animation {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
 }
 
-header {
-    text-align: center;
-    padding: 25px 15px;
+.algo-animation::before,
+.algo-animation::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background-image:
+      radial-gradient(circle, rgba(56,189,248,0.22) 2px, transparent 2px),
+      radial-gradient(circle, rgba(56,189,248,0.15) 1px, transparent 1px);
+  background-size: 230px 230px, 130px 130px;
+  animation: flowAlgo 28s linear infinite;
+  opacity: 0.25;
+  filter: blur(0.5px);
 }
 
-header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #2a4dd1;
+.algo-animation::after {
+  animation-duration: 40s;
+  opacity: 0.18;
+  background-size: 160px 160px, 100px 100px;
 }
 
-.sub {
-    font-size: 14px;
-    opacity: .75;
+@keyframes flowAlgo {
+  0% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(-40px, -70px) scale(1.12); }
+  100% { transform: translate(0,0) scale(1); }
 }
 
-.container {
-    width: 90%;
-    max-width: 500px;
-    margin: 20px auto 10px;
+/* ============================================================
+   GRID BACKGROUND
+============================================================ */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #0f172a;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
-.card {
-    background: #fff;
-    padding: 16px;
-    border-radius: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #dce3ef;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+/* ============================================================
+   APP WRAPPER
+============================================================ */
+.app-container {
+  max-width: 480px;
+  margin: auto;
+  padding: 20px 16px 60px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
 }
 
-label {
-    font-size: 15px;
-    font-weight: 600;
+/* ============================================================
+   HEADER
+============================================================ */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #38bdf8;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 13px;
+  opacity: .8;
+  margin-top: 4px;
+}
+
+/* ============================================================
+   ALGO CARD
+============================================================ */
+.algo-card {
+  padding: 16px 14px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  box-shadow: 0 0 25px rgba(30, 58, 138, .35);
+}
+
+.section-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+/* ============================================================
+   INPUTS
+============================================================ */
+.input-group {
+  margin-bottom: 14px;
+}
+
+.input-group label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  color: #cbd5e1;
 }
 
 select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border-radius: 8px;
-    border: 1px solid #cfd8e6;
-    background: #f8faff;
-    font-size: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: white;
+  font-size: 14px;
+  outline: none;
 }
 
-.btn-copy {
-    margin-top: 12px;
-    width: 100%;
-    padding: 12px;
-    background: #2a4dd1;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
+/* ============================================================
+   RESULT SECTION
+============================================================ */
+.result-box {
+  margin-bottom: 20px;
 }
 
-/* BUTTON UNTUK VIDEO */
-.btn {
-    width: 9em;
-    height: 2.8em;
-    margin: 15px auto;
-    display: block;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+.result-label {
+  font-size: 12px;
+  letter-spacing: .13em;
+  opacity: .7;
 }
 
-.btn:hover {
-    color: black;
+.output-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  background: #0ea5e9;
+  color: #001220;
+  box-shadow: 0 0 18px rgba(14,165,233,.6);
 }
 
-.btn:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.45s ease;
+/* PAYLOAD & PROXY BOX */
+pre {
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  font-size: 13px;
+  white-space: pre-wrap;
+  margin-top: 6px;
+  min-height: 40px;
 }
 
-.btn:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
+/* COPY BUTTON */
+.copy-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: #22c55e;
+  color: #012312;
+  box-shadow: 0 0 18px rgba(34,197,94,.45);
 }
 
-.video-title {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #2a4dd1;
+/* ============================================================
+   MENU LINKS
+============================================================ */
+.algo-link {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.15s;
 }
 
-.btn-outline {
-    margin-top: 10px;
-    display: block;
-    text-align: center;
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid #2a4dd1;
-    color: #2a4dd1;
-    font-weight: 600;
-    text-decoration: none;
+.algo-link:hover {
+  background: #334155;
 }
 
-.btn-small {
-    display: block;
-    padding: 10px;
-    border-radius: 8px;
-    background: #eaf1ff;
-    color: #2a4dd1;
-    text-align: center;
-    margin-bottom: 8px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.info, .services {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    opacity: .7;
-    margin-top: 20px;
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+  opacity: .6;
 }
