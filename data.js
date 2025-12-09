@@ -135,7 +135,7 @@ const DATA = {
             name: "Indosat",
             bugs: {
 
-                app fun 12gb: {
+                app_fun_12gb: {
                     name: "Bug app fun 12gb",
                     payload: [
                         "GET /cdn-cgi/trace HTTP/1.1[crlf]Host: h.facebook.com[crlf]User-Agent: [ua][crlf]Referer: http://covid19.go.id[crlf][crlf]VERSION-CONTROL ws://[host] HTTP/1.1[crlf]Host: covid19.go.id[crlf]Upgrade: websocket[crlf][crlf]"
@@ -146,7 +146,7 @@ const DATA = {
                     ]
                 },
 
-                app game 12gb: {
+                app_game_12gb: {
                     name: "Bug App game 12gb",
                     payload: [
                         "POSTT WSS://poki.com/ HTTP/1.1[crlf]Host: www.pubgmobile.com[crlf]User-Agent: @XRESXCONFIG [ua][crlf][crlf][split][cr]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]"
@@ -156,7 +156,7 @@ const DATA = {
                     ]
                 },
 
-                app edukasi 12gb: {
+                app_edukasi_12gb: {
                     name: "Bug App edukasi 12gb",
                     payload: [
                         "PACTH / HTTP/1.1[crlf]Host: [host][crlf]Host: api.webex.com[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
