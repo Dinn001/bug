@@ -16,7 +16,6 @@ const DATA = {
                         "104.17.70.206:80",
                         "ablink.alerts.udemy.com",
                         "104.17.3.81:80",
-                        "blog.ruangguru.com",
                         "104.22.4.240:80"
                     ]
                 },
@@ -126,6 +125,54 @@ const DATA = {
                     proxy: [
                         "172.67.71.2:443",
                         "104.21.45.6:443"
+                    ]
+                }
+            }
+        },
+ 
+        // ================= INDOSAT ===================
+        indosat: {
+            name: "Indosat",
+            bugs: {
+
+                app fun 12gb: {
+                    name: "Bug app fun 12gb",
+                    payload: [
+                        "GET /cdn-cgi/trace HTTP/1.1[crlf]Host: h.facebook.com[crlf]User-Agent: [ua][crlf]Referer: http://covid19.go.id[crlf][crlf]VERSION-CONTROL ws://[host] HTTP/1.1[crlf]Host: covid19.go.id[crlf]Upgrade: websocket[crlf][crlf]"
+                    ],
+                    proxy: [
+                        "141.193.213.20:80",
+                        "creativeservices.netflix.com"
+                    ]
+                },
+
+                app game 12gb: {
+                    name: "Bug App game 12gb",
+                    payload: [
+                        "POSTT WSS://poki.com/ HTTP/1.1[crlf]Host: www.pubgmobile.com[crlf]User-Agent: @XRESXCONFIG [ua][crlf][crlf][split][cr]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]"
+                    ],
+                    proxy: [
+                        "104.18.62.229:80"
+                    ]
+                },
+
+                app edukasi 12gb: {
+                    name: "Bug App edukasi 12gb",
+                    payload: [
+                        "PACTH / HTTP/1.1[crlf]Host: [host][crlf]Host: api.webex.com[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
+                    ],
+                    proxy: [
+                        "141.193.213.20:80"
+                    ]
+                },
+
+                opok: {
+                    name: "Bug Opok",
+                    payload: [
+                        "GET /cdn-cgi/trace HTTP/1.1[crlf]Host: h.facebook.com[crlf]User-Agent: [ua][crlf]Referer: http://covid19.go.id[crlf][crlf]VERSION-CONTROL ws://[host] HTTP/1.1[crlf]Host: covid19.go.id[crlf]Upgrade: websocket[crlf][crlf]"
+                    ],
+                    proxy: [
+                        "Covid19.go.id:80"
                     ]
                 }
             }
