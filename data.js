@@ -111,9 +111,9 @@ const DATA = {
                         "web.poe.garena.com:80"
                       ]
                 },
-
-conference: {
-                    name: "Bug Conference",
+                
+            conference: {
+              name: "Bug Conference",
                     payload: [
                         "GET / HTTP/1.1[crlf]Host: devsupport.zoom.us[crlf][crlf]PATCH / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf][split]HTTP/SweaterPink 200 OK[crlf][crlf]",
                         "PATCH /ssh-ws HTTP/1.1[crlf]Host: [host][crlf]Host: beta.zoom.us[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: @DINSTORE [ua][crlf][crlf]"
@@ -128,10 +128,8 @@ conference: {
                 sosmed: {
                     name: "Bug Sosmed",
                     payload: [
-                        "GET http://v16.tiktokcdn.com/ HTTP/1.1
-Host: v16.tiktokcdn.com",
-                        "CONNECT tiktok.com:443 HTTP/1.1
-Host: tiktok.com"
+                        "GET http://v16.tiktokcdn.com/ HTTP/1.1",
+                        "CONNECT tiktok.com:443 HTTP/1.1"
                     ],
                     proxy: [
                         "172.67.71.2:443",
