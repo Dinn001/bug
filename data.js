@@ -16,6 +16,7 @@ const DATA = {
                         "104.17.70.206:80",
                         "ablink.alerts.udemy.com",
                         "104.17.3.81:80",
+                        "blog.ruangguru.com",
                         "104.22.4.240:80"
                     ]
                 },
